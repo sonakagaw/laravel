@@ -1,0 +1,214 @@
+@charset "utf-8";
+
+.wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+#header {
+    text-align: left;
+    background-color: gray;
+    border-top: 8px double red;
+}
+
+#contents {
+    text-align: left;
+}
+
+.kensaku, .kakikomi, .sakujo {
+    height: 47px;
+    position: relative;
+}
+
+.kensaku2, .kakikomi2, .sakujo2 {
+    max-height: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: ease 0.5s;
+}
+
+h2 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    color: #fff;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+span.icon {
+    position: absolute;
+    right: 10px;
+    top: 8px;
+    width: 30px;
+    height: 30px;
+}
+
+form {
+    margin-left: 10px;
+}
+
+.setumei {
+    margin-left: 10px;
+    position: relative;
+    top: 3px;
+}
+
+.imgMinus {
+    display: none;
+}
+
+.kensaku.on img.imgPlus, .kakikomi.on img.imgPlus, .sakujo.on img.imgPlus {
+    display: none;
+}
+
+.kensaku.on img.imgMinus, .kakikomi.on img.imgMinus, .sakujo.on img.imgMinus {
+    display: block;
+}
+
+.kensaku2.open, .kakikomi2.open, .sakujo2.open{
+    max-height: 1000px;
+    visibility: visible;
+    opacity: 1;
+}
+
+.kensaku {
+    background-image: url("../image/background-magenta.png");
+}
+
+.kakikomi {
+    background-image: url("../image/background-orange.png");
+}
+
+.sakujo {
+    background-image: url("../image/background-green.png");
+}
+
+.kensaku2 {
+    background-color: violet;
+    height: 90px;
+}
+
+.kakikomi2 {
+    background-color: yellow;
+    height: 185px;
+}
+
+.sakujo2 {
+    background-color: yellowgreen;
+    height: 135px;
+}
+
+.table1 {
+    border: none;
+}
+
+.table1 td {
+    border: none;
+}
+
+.table2 {
+   border-collapse: collapse;
+   border-spacing: 0; 
+   width: 100%;
+   margin-bottom: 10px;
+   text-align: center;
+}
+
+.table2 th {
+    color: #fff;
+    background-color: red;
+    text-align: center;
+    border: solid 2px #ddd;
+    padding: 3px;
+}
+
+.table2 td {
+    border: solid 2px #ddd;
+    padding: 3px;
+}
+
+.table2 .th4 {
+    width: 6em;
+}
+
+.table2 .th5, .th3 {
+    width: 8em;
+}
+
+.list a::before {
+    content: url(../image/arrow-green.png);
+}
+
+.list li {
+    display: inline-block;
+    padding: 8px;
+}
+
+.kensaku_nasi {
+    color: red;
+    text-align: center;
+}
+
+#footer {
+    background-color:teal;
+    padding: 2em 1em;
+}
+ 
+#footer .wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.section2 {
+    width: 48%;
+}
+
+.section2 .imgL {
+    margin-top: 10px;
+}
+
+.otoiawase {
+    margin-top: 10px;
+}
+
+.shosai a{
+    border-radius: 10px;
+    color: #fff;
+    background-color:lightseagreen;
+    text-decoration: none;
+    display: block;
+    width: 8em;
+    margin: 0 auto;
+}
+
+.otoiawase a{
+    border-radius: 10px;
+    color: #fff;
+    background-color:lightseagreen;
+    text-decoration: none;
+    display: block;
+    width: 8em;
+    text-align: center;
+    float: right;
+}
+
+.list {
+    clear: both;
+}
+
+.list2 a {
+    color: #fff;
+}
+
+.rights{
+    text-align: right;
+    color: #fff;
+}
+
+
+
